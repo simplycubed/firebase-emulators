@@ -9,6 +9,6 @@ steps:
       - "."
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA"]
+timeout: "900s" # 15 minutes
 images:
-  - gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA
   - gcr.io/$PROJECT_ID/$REPO_NAME:latest
