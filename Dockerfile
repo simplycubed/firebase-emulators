@@ -34,7 +34,7 @@ WORKDIR /app
 # First run will download the current .jar files for firebase
 # RUN firebase emulators:exec --project test ls >> /dev/null
 # Download only required emulators
-RUN firebase setup:emulators:firestore && firebase setup:emulators:storage && firebase setup:emulators:ui
+RUN firebase setup:emulators:firestore && firebase setup:emulators:storage && firebase setup:emulators:pubsub && firebase setup:emulators:ui
 
 COPY ./firebase.json /app/firebase.json
 COPY ./.firebaserc /app/.firebaserc
