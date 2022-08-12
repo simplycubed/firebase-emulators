@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster
+FROM python:3.10.6-slim-buster
 ################################################################################
 # Original Source: https://github.com/goat-io/fluent/blob/303b3dee5114ff902f87a0069f4e744895d67426/packages/dev/Database/Firebase/Dockerfile
 ################################################################################
