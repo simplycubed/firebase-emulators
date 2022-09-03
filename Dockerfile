@@ -1,4 +1,4 @@
-FROM python:3.10.6-slim-buster
+FROM python:slim-bullseye
 ################################################################################
 # Original Source: https://github.com/goat-io/fluent/blob/303b3dee5114ff902f87a0069f4e744895d67426/packages/dev/Database/Firebase/Dockerfile
 ################################################################################
