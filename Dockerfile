@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.11.0-slim-buster
 
 # The Firebase install scripts use sudo so we need to add it.
 RUN apt update && apt install -y sudo
