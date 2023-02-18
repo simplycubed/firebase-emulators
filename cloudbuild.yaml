@@ -1,7 +1,7 @@
 steps:
   - name: "gcr.io/kaniko-project/executor:v1.6.0"
     args:
-      - --destination=gcr.io/$PROJECT_ID/firebase-emulator:latest
+      - --destination=gcr.io/$PROJECT_ID/firebase-emulators:latest
       - --cache=true
       - --dockerfile=Dockerfile
     env:
